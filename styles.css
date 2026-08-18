@@ -389,6 +389,56 @@ img, svg { display: block; max-width: 100%; }
   font-weight: 500;
 }
 
+/* ---------- Inquiry Form (Netlify) ---------- */
+.inquiry-form {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 26px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  text-align: left;
+  box-shadow: 0 18px 50px rgba(0,0,0,.25);
+}
+.inquiry-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.inquiry-form .form-field { margin-bottom: 14px; display: flex; flex-direction: column; }
+.inquiry-form label { font-size: 13px; font-weight: 600; color: #1f2d3d; margin-bottom: 6px; }
+.inquiry-form label span { color: #d93025; }
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea {
+  font: inherit; font-size: 14px;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  color: #1f2d3d;
+  background: #f8fafc;
+  width: 100%;
+  box-sizing: border-box;
+}
+.inquiry-form input:focus,
+.inquiry-form select:focus,
+.inquiry-form textarea:focus { outline: none; border-color: #1565c0; background: #fff; }
+.inquiry-form textarea { resize: vertical; }
+.inquiry-form .hp-field { display: none; }
+.inquiry-form .btn-block { width: 100%; border: none; cursor: pointer; margin-top: 4px; }
+.inquiry-form .form-status { margin: 12px 0 0; font-size: 13px; font-weight: 600; }
+.inquiry-form .form-ok { color: #1e7e34; }
+.inquiry-form .form-err { color: #d93025; }
+@media (max-width: 560px) { .inquiry-form .form-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Floating Contact Buttons ---------- */
+.floating-contact { position: fixed; right: 18px; bottom: 18px; z-index: 9999; display: flex; flex-direction: column; gap: 12px; }
+.fc-btn { width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(0,0,0,.28); transition: transform .15s ease; }
+.fc-btn:hover { transform: scale(1.08); }
+.fc-whatsapp { background: #25D366; }
+.fc-email { background: #1565c0; }
+.fc-btn svg { width: 27px; height: 27px; fill: #fff; }
+@media (max-width: 560px) { .floating-contact { right: 12px; bottom: 12px; } .fc-btn { width: 48px; height: 48px; } .fc-btn svg { width: 24px; height: 24px; } }
+
 /* ---------- Footer ---------- */
 .site-footer {
   background:
