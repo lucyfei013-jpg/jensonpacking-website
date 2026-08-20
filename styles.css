@@ -716,3 +716,21 @@ img, svg { display: block; max-width: 100%; }
 .insight-article h3 { font-size: 18px; color: var(--blue-700); font-weight: 800; margin: 22px 0 8px; }
 .insight-article p { color: var(--muted); font-size: 15.5px; margin-bottom: 12px; line-height: 1.7; }
 .insight-article a { color: var(--blue-700); font-weight: 600; text-decoration: underline; }
+/* Related articles on product pages */
+.related-articles { background:#f7f9fc; }
+.related-articles .section-title { text-align:center; margin-bottom:1.75rem; }
+.related-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.25rem; }
+.related-card {
+  display:flex; flex-direction:column; gap:.5rem;
+  background:#fff; border:1px solid #e6ebf2; border-radius:14px;
+  padding:1.4rem 1.5rem; text-decoration:none; color:inherit;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.related-card:hover { transform:translateY(-4px); box-shadow:0 12px 28px rgba(20,40,80,.10); border-color:#c7d4e6; }
+.related-tag {
+  align-self:flex-start; font-size:.72rem; font-weight:700; letter-spacing:.04em;
+  text-transform:uppercase; color:#1f6feb; background:#eaf2ff; padding:.25rem .6rem; border-radius:999px;
+}
+.related-card h3 { font-size:1.06rem; margin:.2rem 0; color:#16263f; line-height:1.35; }
+.related-card p { font-size:.9rem; color:#5b6b80; margin:0; line-height:1.55; }
+.related-more { margin-top:.35rem; font-size:.88rem; font-weight:600; color:#1f6feb; }
